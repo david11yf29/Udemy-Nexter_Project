@@ -4,8 +4,12 @@
     margin: 15rem 0;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(3, 1fr);
+
+    // responsive without using media query, 必須學起來
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 6rem;
+    align-items: start;
 }
 
 .feature {
@@ -22,6 +26,7 @@
         // -1 only works if we already defined row before
         // span = 跨越幾格的意思 ex: span 2 = 跨兩格
         grid-row: 1 / span 2;
+        transform: translateY(-1rem);
     }
 
     &__text {
