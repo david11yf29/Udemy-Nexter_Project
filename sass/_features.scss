@@ -10,6 +10,16 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 6rem;
     align-items: start;
+
+    /* 
+    RWD必須學的
+    @supports(display: grid) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 6rem;
+        align-items: start;
+    }
+    */
 }
 
 .feature {
