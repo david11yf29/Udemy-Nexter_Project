@@ -54,7 +54,7 @@ body {
     }
 
     @media only screen and (max-width: $bp-medium) {
-        // calc(100vh-6rem)這招學起來
-        grid-template-rows: 6rem calc(100vh-6rem) min-content min-content 40vw repeat(3, min-content);
+        // calc(100vh - 6rem)這招學起來 相減部分一定要有用格
+        grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content 40vw repeat(3, min-content);
     }
 }
