@@ -9,6 +9,8 @@
     // responsive without using media query, 必須學起來
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 6rem;
+
+    // 全部內容往上推到底，原本是stretch
     align-items: start;
 
     /* 
