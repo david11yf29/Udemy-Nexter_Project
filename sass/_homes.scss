@@ -1,8 +1,9 @@
 .homes {
     grid-column: center-start / center-end;
     margin: 15rem 0;
-
     display: grid;
+    
+    // auto-fit原理要看懂，可以直接RWD
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 7rem;
 }
