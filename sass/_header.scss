@@ -38,7 +38,7 @@
 
     &__seenon-text {
 
-        // 這邊有點tricky，把下面的::before ::after當作grid使用，只有grid做得到，flexbox無法
+        // 這邊有點tricky，把下面的::before ::after當作grid使用，只有grid做得到，flexbox無法，這招認真看懂
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
         grid-column-gap: 1.5rem;
