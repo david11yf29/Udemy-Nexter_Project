@@ -14,6 +14,8 @@
 
     display: grid;
     grid-template-rows: 1fr min-content minmax(6rem,min-content) 1fr;
+
+    // RWD可以用minmax來調整
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 1.5rem;
     justify-content: center;
@@ -67,6 +69,8 @@
         align-items: center;
 
         img {
+
+            // max好用要學起來
             max-height: 2.5rem;
             max-width: 100%;
 
