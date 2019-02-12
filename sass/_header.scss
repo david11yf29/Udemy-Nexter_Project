@@ -1,10 +1,15 @@
 .header {
     background-color: $color-grey-dark-1;
     grid-column: full-start / col-end 6;
+
+    // background-image這邊用法主要是後面的linear-gradient可以把畫面變暗，並且還有圖片
     background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/hero.jpeg);
     background-size: cover;
+
     background-position: center;
     padding: 8rem;
+    
+    // 後面寫的會蓋住前面的padding
     padding-top: 4rem;
 
     display: grid;
@@ -32,6 +37,8 @@
     }
 
     &__seenon-text {
+
+        // 這邊有點tricky，把下面的::before ::after當作grid使用，只有grid做得到，flexbox無法
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
         grid-column-gap: 1.5rem;
@@ -40,6 +47,7 @@
         font-size: 1.6rem;
         color: $color-grey-light-2;
 
+        // 一樣在前面做個psuedo element
         &::before,
         &::after {
             content: "";
@@ -61,6 +69,8 @@
         img {
             max-height: 2.5rem;
             max-width: 100%;
+
+            // 可以讓img變暗，調整亮度
             filter: brightness(70%);
         }
     }
