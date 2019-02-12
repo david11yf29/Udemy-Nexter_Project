@@ -21,6 +21,8 @@
         align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
+
+            // 這個也要學起來，前面是圖片，後面是文字，不要讓文字分行
             grid-template-columns: repeat(3, min-content max-content);
         }
 

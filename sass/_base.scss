@@ -60,7 +60,8 @@ body {
     }
 
     @media only screen and (max-width: $bp-medium) {
-        // calc(100vh - 6rem)這招學起來 相減部分一定要有用格
+
+        // calc(100vh - 6rem)這招學起來 相減部分一定要有用格，可以給calc不一定要給固定數字，後面的rows要讓他自行調整就不加任何限定東西
         grid-template-rows: 6rem calc(100vh - 6rem);
     }
 }
