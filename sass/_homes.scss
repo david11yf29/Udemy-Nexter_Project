@@ -67,6 +67,7 @@
         display: flex;
         align-items: center;
 
+        // home__price 裡層的svg也可以直接這樣用不用在新的一行
         svg {
             fill: $color-primary;
             height: 2rem;
