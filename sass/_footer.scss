@@ -8,6 +8,8 @@
     list-style: none;
 
     display: grid;
+
+    // 老招式一樣自動調整無需media queries，一定要學起來
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 2rem;
     align-items: center;
@@ -35,6 +37,8 @@
 .copyright {
     font-size: 1.4rem;
     color: $color-grey-light-2;
+
+    // 左右設定成auto等於置中
     margin: 6rem auto;
     text-align: center;
     width: 70%;
